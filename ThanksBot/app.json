@@ -16,7 +16,7 @@
     "VERIFY_TOKEN": {
       "description": "A token used to verify your webhook subscription. You can choose any string here.",
       "required": true
-    },
+    }
   },
   "addons": [
   	"heroku-postgresql"
