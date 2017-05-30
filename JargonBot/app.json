@@ -1,0 +1,31 @@
+/* jshint node: true */
+'use strict';
+
+const
+	bodyparser = require('body-parser'),
+	express = require('express'),
+	csv = require('csv');
+
+var app = express();
+app.set('port', process.env.PORT || 5000);
+app.use(bodyparser.json({ verify: verifyRequestSignature }));
+
+const
+	APP_SECRET = process.env.APP_SECRET,
+	VERIFY_TOKEN = process.env.VERIFY_TOKEN,
+	CSV_FILE_PATH = process.env.CSV_FILE_PATH;
+
+app.get('/', function(req,res) {
+	if (req.query['hub.mode'] === 'subscribe' &&
+      req.query['hub.verify_token'] === VALIDATION_TOKEN) {
+    console.log("Validating webhook");
+    res.status(200).send(req.query['hub.challenge']);
+  } else {
+    console.error("Failed validation. Make sure the validation tokens match.");
+    res.sendStatus(403);
+    }
+});
+
+app.put('/', function(req,res){
+	
+});

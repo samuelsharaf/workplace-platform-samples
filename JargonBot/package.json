@@ -1,0 +1,24 @@
+{
+  "name": "jargonbot",
+  "version": "1.0.0",
+  "description": "A bot for providing jargon definitions",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "crypto": "0.0.3",
+    "csv": "^1.1.1",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
+}
