@@ -1,5 +1,9 @@
 # Thanks Bot for Workplace
 
+<a href="https://heroku.com/deploy">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+
 ## Database Setup
 
 This bot uses a Postgres database for storing previous thanks events. To use the bot, create a database table table with the following fields:
